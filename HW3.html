@@ -14582,6 +14582,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Homework-3:-Sentiment-Classification">Homework 3: Sentiment Classification<a class="anchor-link" href="#Homework-3:-Sentiment-Classification">&#182;</a></h2><p><strong>Jackson Rudoff</strong></p>
 <p><em>April 17, 2023</em></p>
+<p><a href="&quot;https://github.com/jer164/sst-competition&quot;">Github Repo</a></p>
 
 </div>
 </div>
@@ -15083,22 +15084,6 @@ Total params: 119,330
 Trainable params: 119,330
 Non-trainable params: 0
 _________________________________________________________________
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- embedding_39 (Embedding)    (None, 60, 10)            100000    
-                                                                 
- lstm_31 (LSTM)              (None, 64)                19200     
-                                                                 
- flatten_15 (Flatten)        (None, 64)                0         
-                                                                 
- dense_36 (Dense)            (None, 2)                 130       
-                                                                 
-=================================================================
-Total params: 119,330
-Trainable params: 119,330
-Non-trainable params: 0
-_________________________________________________________________
 </pre>
 </div>
 </div>
@@ -15488,24 +15473,6 @@ To submit code used to create this model or to view current leaderboard navigate
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Model: &#34;sequential_38&#34;
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- embedding_41 (Embedding)    (None, 60, 10)            100000    
-                                                                 
- conv1d_226 (Conv1D)         (None, 60, 32)            2272      
-                                                                 
- conv1d_227 (Conv1D)         (None, 60, 32)            7200      
-                                                                 
- max_pooling1d_101 (MaxPooli  (None, 12, 32)           0         
- ng1D)                                                           
-                                                                 
- conv1d_228 (Conv1D)         (None, 12, 64)            14400     
-                                                                 
- conv1d_229 (Conv1D)         (None, 12, 64)            28736     
-                                                                 
- global_max_pooling1d_14 (Gl  (None, 64)               0         
- obalMaxPooling1D)                                               
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -16105,22 +16072,6 @@ Total params: 1,117,506
 Trainable params: 117,506
 Non-trainable params: 1,000,000
 _________________________________________________________________
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- embedding_63 (Embedding)    (None, 60, 100)           1000000   
-                                                                 
- lstm_59 (LSTM)              (None, 128)               117248    
-                                                                 
- flatten_34 (Flatten)        (None, 128)               0         
-                                                                 
- dense_58 (Dense)            (None, 2)                 258       
-                                                                 
-=================================================================
-Total params: 1,117,506
-Trainable params: 117,506
-Non-trainable params: 1,000,000
-_________________________________________________________________
 </pre>
 </div>
 </div>
@@ -16541,27 +16492,6 @@ To submit code used to create this model or to view current leaderboard navigate
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Model: &#34;sequential_62&#34;
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- embedding_67 (Embedding)    (None, 60, 7)             70000     
-                                                                 
- conv1d_254 (Conv1D)         (None, 60, 32)            1152      
-                                                                 
- conv1d_255 (Conv1D)         (None, 60, 32)            5152      
-                                                                 
- max_pooling1d_118 (MaxPooli  (None, 20, 32)           0         
- ng1D)                                                           
-                                                                 
- conv1d_256 (Conv1D)         (None, 20, 32)            5152      
-                                                                 
- conv1d_257 (Conv1D)         (None, 20, 32)            5152      
-                                                                 
- max_pooling1d_119 (MaxPooli  (None, 6, 32)            0         
- ng1D)                                                           
-                                                                 
- conv1d_258 (Conv1D)         (None, 6, 64)             10304     
-                                                                 
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -17010,22 +16940,6 @@ Total params: 1,017,090
 Trainable params: 17,090
 Non-trainable params: 1,000,000
 _________________________________________________________________
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- embedding_71 (Embedding)    (None, 50, 100)           1000000   
-                                                                 
- lstm_63 (LSTM)              (None, 32)                17024     
-                                                                 
- flatten_38 (Flatten)        (None, 32)                0         
-                                                                 
- dense_66 (Dense)            (None, 2)                 66        
-                                                                 
-=================================================================
-Total params: 1,017,090
-Trainable params: 17,090
-Non-trainable params: 1,000,000
-_________________________________________________________________
 </pre>
 </div>
 </div>
@@ -17309,7 +17223,31 @@ To submit code used to create this model or to view current leaderboard navigate
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This is definitely our best <code>LSTM</code> yet, but it still has room for greater depth, and in turn, perhaps better external accuracy.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Final-Model:-Packing-It-All-In">Final Model: Packing It All In<a class="anchor-link" href="#Final-Model:-Packing-It-All-In">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For this last model, we're going to try stacking up LSTM depth while also using callbacks to help maximize our training time and reduce overfitting. We're going to use the Glove weights again, which will feed into progressively smaller LSTM layers, and then include a plateau-check to make sure we don't get stuck.</p>
+
 </div>
 </div>
 </div>
@@ -17363,26 +17301,6 @@ To submit code used to create this model or to view current leaderboard navigate
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Model: &#34;sequential_71&#34;
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- embedding_76 (Embedding)    (None, 50, 100)           1000000   
-                                                                 
- lstm_75 (LSTM)              (None, 50, 64)            42240     
-                                                                 
- lstm_76 (LSTM)              (None, 50, 32)            12416     
-                                                                 
- lstm_77 (LSTM)              (None, 16)                3136      
-                                                                 
- flatten_43 (Flatten)        (None, 16)                0         
-                                                                 
- dense_71 (Dense)            (None, 2)                 34        
-                                                                 
-=================================================================
-Total params: 1,057,826
-Trainable params: 57,826
-Non-trainable params: 1,000,000
-_________________________________________________________________
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -17671,6 +17589,18 @@ To submit code used to create this model or to view current leaderboard navigate
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We actually lost some performance here, and I think that's because the design was a bit flawed. The EarlyStopping I think impeded the <code>ReduceOnPlateau</code> utility, and the dropout in our two layers I think may have also provided diminishing returns over time with regards to generalizability. With more time, I would be curious to see how running these tests without the Dropout would have gone.</p>
+
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
